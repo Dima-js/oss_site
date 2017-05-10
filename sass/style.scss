@@ -1,0 +1,15 @@
+@import 'base';
+@import "atom/varibles";
+
+main {
+	max-width: $content-width;
+  	margin: 0 auto;
+
+	color: $font-color;
+  	display: flex;
+	padding: 10px;
+	background: $red1;
+	h1 {
+		font-size: $header-size;
+	}
+}  
