@@ -12,7 +12,7 @@ module.exports = function (grunt) {
         files: [{
           expand: true,
           cwd: 'sass',
-          src: ['**/*.scss'],
+          src: ['**/*.sass'],
           dest: 'css',
           ext: '.css'
       }]
@@ -50,7 +50,7 @@ module.exports = function (grunt) {
     },
     watch: { // Compile everything into one task with Watch Plugin
       css: {
-        files: '**/*.scss',
+        files: '**/*.sass',
         tasks: ['sass', 'postcss', 'cssmin']
       },
       js: {
