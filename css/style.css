@@ -14,4 +14,71 @@ textarea {
 p {
   margin: 0; }
 
-@font-face {}
+@font-face {
+  font-family: "Proxima nova bold";
+  src: url("../font/proxima-nova-bold.otf");
+  font-style: normal;
+  font-weight: normal; }
+header .wrapper {
+  max-width: 1380px; }
+  header .wrapper .header_top-menu {
+    position: relative; }
+    header .wrapper .header_top-menu .logo {
+      background: url("../img/logo.png") no-repeat;
+      width: 202px;
+      height: 55px;
+      position: absolute;
+      top: 10px;
+      left: 25px; }
+    header .wrapper .header_top-menu .wrap_top-menu_left {
+      float: right; }
+      header .wrapper .header_top-menu .wrap_top-menu_left .wrap_item-menu {
+        float: right; }
+        header .wrapper .header_top-menu .wrap_top-menu_left .wrap_item-menu a {
+          text-transform: uppercase;
+          color: #2c2f33;
+          font-family: "Proxima nova bold";
+          font-size: 12px;
+          font-weight: 700;
+          margin-top: 35px;
+          margin-bottom: 35px;
+          display: inline-block;
+          position: relative; }
+          header .wrapper .header_top-menu .wrap_top-menu_left .wrap_item-menu a:first-child {
+            margin-right: 35px; }
+            header .wrapper .header_top-menu .wrap_top-menu_left .wrap_item-menu a:first-child:before {
+              content: "";
+              position: absolute;
+              background: url("../img/icon-user.png") no-repeat;
+              height: 10px;
+              width: 10px;
+              top: 0;
+              left: -15px; }
+          header .wrapper .header_top-menu .wrap_top-menu_left .wrap_item-menu a:last-child:before {
+            content: "";
+            position: absolute;
+            background: url("../img/icon-like.png") no-repeat;
+            height: 10px;
+            width: 11px;
+            top: 0px;
+            left: -15px; }
+      header .wrapper .header_top-menu .wrap_top-menu_left .wrap_language {
+        float: right; }
+        header .wrapper .header_top-menu .wrap_top-menu_left .wrap_language a img {
+          margin-top: 33px;
+          margin-bottom: 37px; }
+      header .wrapper .header_top-menu .wrap_top-menu_left .basket {
+        background: #ff0049;
+        height: 85px;
+        width: 105px;
+        position: relative;
+        float: right; }
+        header .wrapper .header_top-menu .wrap_top-menu_left .basket:before {
+          content: "";
+          background: url("../img/shopping-cart.png") no-repeat;
+          height: 24px;
+          position: absolute;
+          top: 35%;
+          left: 40%;
+          width: 24px;
+          background-position: center center; }

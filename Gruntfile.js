@@ -48,6 +48,50 @@ module.exports = function (grunt) {
         dest: 'js/script.min.js'
       }
     },
+    browserSync: {
+      dev: {
+        bsFiles: {
+          src : [
+            '*.css',
+            '*.html'
+          ]
+        },
+        options: {
+          watchTask: true,
+          server: './'
+        }
+      }
+    },
+    htmlbuild: {
+        dist: {
+            src: 'index.html',
+            dest: './',
+            options: {
+                beautify: true,
+                scripts: {
+                    bundle: [
+                        'js/*.js'
+                    ],
+                    main: 'scripts/common.js'
+                },
+                styles: {
+                    bundle: [
+                        'css/style.css'
+                    ],
+                    test: 'css/style.css'
+                },
+                sections: {
+                    views: 'views/*.html',
+                    templates: 'templates/*.html'
+                },
+                data: {
+    			// Data to pass to templates
+                    version: "0.1.0",
+                    title: "test"
+                }
+            }
+        }
+    },
     watch: { // Compile everything into one task with Watch Plugin
       css: {
         files: '**/*.sass',
@@ -57,6 +101,7 @@ module.exports = function (grunt) {
         files: '**/*.js',
         tasks: ['uglify']
       }
+
     }
   });
   // Load Grunt plugins
@@ -65,7 +110,9 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-cssmin');
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
+  grunt.loadNpmTasks('grunt-contrib-html-build');
+  grunt.loadNpmTasks('grunt-browser-sync');
 
   // Register Grunt tasks
-  grunt.registerTask('default', ['watch']);
+  grunt.registerTask('default', ['browserSync','watch']);
 };
