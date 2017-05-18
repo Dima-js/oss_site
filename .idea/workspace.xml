@@ -5,20 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="fbf47283-c09e-4902-850c-79d9aa20e991" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/8f161aae21da364e3afc8c3960cf99847c2490a3/style.sassc" afterPath="$PROJECT_DIR$/.sass-cache/8f161aae21da364e3afc8c3960cf99847c2490a3/style.sassc" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.sass-cache/c8e09cfaba588ffae3f90674bbbacc9888e0db12/header.sassc" afterPath="$PROJECT_DIR$/.sass-cache/c8e09cfaba588ffae3f90674bbbacc9888e0db12/header.sassc" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.gitignore" afterPath="$PROJECT_DIR$/.gitignore" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gruntfile.js" afterPath="$PROJECT_DIR$/Gruntfile.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/README.md" afterPath="$PROJECT_DIR$/README.md" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/helpers/fonts.css" afterPath="$PROJECT_DIR$/css/helpers/fonts.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/modules/header.css" afterPath="$PROJECT_DIR$/css/modules/header.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.css" afterPath="$PROJECT_DIR$/css/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/css/style.min.css" afterPath="$PROJECT_DIR$/css/style.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/index.html" afterPath="$PROJECT_DIR$/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/helpers/_fonts.sass" afterPath="$PROJECT_DIR$/sass/helpers/_fonts.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/modules/header.sass" afterPath="$PROJECT_DIR$/sass/modules/header.sass" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/sass/style.sass" afterPath="$PROJECT_DIR$/sass/style.sass" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/LICENSE.md" afterPath="$PROJECT_DIR$/LICENSE.md" />
     </list>
     <ignored path="startgrunt.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -92,16 +80,6 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="README.md" pinned="false" current-in-tab="true">
-            <entry file="file://$PROJECT_DIR$/README.md">
-              <provider selected="true" editor-type-id="text-editor">
-                <state relative-caret-position="0">
-                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
           <file leaf-file-name="spritesheet.png" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/dest/spritesheet.png">
               <provider selected="true" editor-type-id="images">
@@ -113,7 +91,17 @@
             <entry file="file://$PROJECT_DIR$/.gitignore">
               <provider selected="true" editor-type-id="text-editor">
                 <state relative-caret-position="45">
-                  <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
+                  <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="LICENSE.md" pinned="false" current-in-tab="true">
+            <entry file="file://$PROJECT_DIR$/LICENSE.md">
+              <provider selected="true" editor-type-id="text-editor">
+                <state relative-caret-position="0">
+                  <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
@@ -199,10 +187,6 @@
   </component>
   <component name="FrameworkCommandLineHistory">
     <commandsHistory>
-      <command text="git commit -m &quot;first options site&quot;" />
-      <command text="git push origin dev" />
-      <command text="grunt" />
-      <command text="пкгте" />
       <command text="grunt" />
       <command text="gulp" />
       <command text="grunt" />
@@ -224,6 +208,10 @@
       <command text="grunt sprite" />
       <command text="grunt" />
       <command text="grunt " />
+      <command text="git status" />
+      <command text="git add ." />
+      <command text="git commit -m &quot;add header content and slider&quot;" />
+      <command text="git push origin master" />
     </commandsHistory>
   </component>
   <component name="Git.Settings">
@@ -249,7 +237,6 @@
         <option value="$PROJECT_DIR$/sass/helpers/fonts.sass" />
         <option value="$PROJECT_DIR$/sass/helpers/mixins.sass" />
         <option value="$PROJECT_DIR$/sass/helpers/varibles.sass" />
-        <option value="$PROJECT_DIR$/.gitignore" />
         <option value="$PROJECT_DIR$/sass/style.sass" />
         <option value="$PROJECT_DIR$/css/helpers/fonts.css" />
         <option value="$PROJECT_DIR$/sass/helpers/_fonts.sass" />
@@ -260,6 +247,8 @@
         <option value="$PROJECT_DIR$/sass/modules/header.sass" />
         <option value="$PROJECT_DIR$/Gruntfile.js" />
         <option value="$PROJECT_DIR$/README.md" />
+        <option value="$PROJECT_DIR$/.gitignore" />
+        <option value="$PROJECT_DIR$/LICENSE.md" />
       </list>
     </option>
   </component>
@@ -519,12 +508,12 @@
       <workItem from="1495045842371" duration="12203000" />
       <workItem from="1495088786418" duration="36000" />
       <workItem from="1495096358591" duration="20376000" />
-      <workItem from="1495123321391" duration="1609000" />
+      <workItem from="1495123321391" duration="1808000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="64163000" />
+    <option name="totallyTimeSpent" value="64362000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="57" y="24" width="1309" height="744" extended-state="6" />
@@ -567,14 +556,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/sass/helpers/_varibles.sass">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="300">
-          <caret line="20" column="0" selection-start-line="20" selection-start-column="0" selection-end-line="20" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/style.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -769,14 +750,6 @@
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/npm-debug.log" />
-    <entry file="file://$PROJECT_DIR$/.gitignore">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="45">
-          <caret line="3" column="10" selection-start-line="3" selection-start-column="10" selection-end-line="3" selection-end-column="10" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/sass/_sprites.sass">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-1688">
@@ -889,6 +862,14 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/README.md">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Gruntfile.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="240">
@@ -897,7 +878,15 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/README.md">
+    <entry file="file://$PROJECT_DIR$/.gitignore">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="45">
+          <caret line="3" column="0" selection-start-line="3" selection-start-column="0" selection-end-line="3" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/LICENSE.md">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
           <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
