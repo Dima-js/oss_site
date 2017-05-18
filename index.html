@@ -6,15 +6,40 @@
 	<title>viparis</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="css/style.min.css" rel="stylesheet">
+	<link rel="stylesheet" type="text/css" href="css/owl.carousel.css"/>
+	<link rel="stylesheet" type="text/css" href="css/owl.theme.default.css"/>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+<script>
+	$(document).ready(function(){
+		$('.owl-carousel').owlCarousel({
+			loop:true,
+			nav:true,
+			responsive:{
+				0:{
+					items:1
+				},
+				600:{
+					items:1
+				},
+				1000:{
+					items:1
+				}
+			}
+		});
+	});
+</script>
+
 </head>
 
 <body>
 	<header>
-		<div class="wrapper">
-			<div class="header_top-menu">
-				<div class="logo"></div>
-				<div class="wrap_top-menu_left">
-					<a href="#" class="basket"></a>
+			<div class="header_top-menu clearfix">
+				<a href="#" class="logo"></a>
+
+				<div class="wrap_top-menu_left clearfix">
+					<a href="#" class="basket">
+						<div class="count">10</div>
+					</a>
 
 					<div class="wrap_language">
 						<a href="#">
@@ -31,10 +56,160 @@
 
 				</div>
 			</div>
+		<div class="wrap_banner">
+			<img src="img/sprites/calque-37.png" class="banner">
+			<p>
+				Le rendez-vous mondial de l'innovation alimentaire
+			</p>
 		</div>
-	</header>
+		<nav>
+			<div>this is menu</div>
+		</nav>
 
-	<script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
+	</header>
+	<main>
+		<div class="wrapper">
+			<div class="wrap_breadcrumbs clearfix">
+				<a href="#">Accueil</a>
+				<a href="#">Présentation</a>
+			</div>
+			<div class="wrap_date-block clearfix">
+				<div class="first_date">
+					<h3>Palais des Congrès de Paris</h3>
+					<p>du <span>01/10/2016</span> au <span>16/11/2016</span></p>
+				</div>
+				<div class="second_date clearfix">
+					<div class="date">
+						Date de majoration <span>jj/mm/aaaa</span>
+					</div>
+					<div class="date">
+						Fermeture catalogue <span>jj/mm/aaaa</span>
+					</div>
+
+				</div>
+			</div>
+			<div class="top-block_main clearfix">
+				<div class="wrap_inform-block">
+					<h3>Informations pratiques</h3>
+					<p class="info-data">Informations pratiques</p>
+					<p class="cursor">Site de l’organisateur</p>
+					<a href="#" class="download-file" download>Télécharger le cataloge
+						de produits</a>
+					<a href="#" class="download-file" download>Télécharger le cataloge
+						de produits</a>
+					<a href="#" class="download-file" download>Télécharger le cataloge
+						de produits</a>
+					<img src="img/sprites/img-r.png">
+				</div>
+				<div class="wrap_slider ">
+
+					<div class="owl-carousel">
+						<div>
+							<div class="wrap_data-slider">
+								<a href="#">Nouveau service</a>
+								<h3>Recharger tablettes et smartphones avec la Tower charge</h3>
+								<p>
+									Offrez à vos visiteurs la possibilité de recharger leurs Smartphones ou tablettes avec TOWER CHARGE sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+						<div>
+							<div class="wrap_data-slider">
+								<a href="#">Nouveau service</a>
+								<h3>Recharger tablettes et smartphones avec la Tower charge</h3>
+								<p>
+									Offrez à vos visiteurs la possibilité de recharger leurs Smartphones ou tablettes avec TOWER CHARGE sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+						<div>
+							<div class="wrap_data-slider">
+								<a href="#">Nouveau service</a>
+								<h3>Recharger tablettes et smartphones avec la Tower charge</h3>
+								<p>
+									Offrez à vos visiteurs la possibilité de recharger leurs Smartphones ou tablettes avec TOWER CHARGE sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua.
+								</p>
+							</div>
+						</div>
+					</div>
+					<img src="img/sprites/slider-img1.png">
+				</div>
+			</div>
+		</div>
+		<div class="wrap_product">
+			<div class="wrapper">
+				<h3>Nos suggestions</h3>
+				<div class="wrapper_products clearfix">
+					<div class="product">
+						<img src="img/sprites/img-product1.png">
+						<h2>Tablette Ipad 2</h2>
+						<span class="product_status"> En stock</span>
+						<p>A partir de <span>00,00 € HT</span> </p>
+						<a href="#">voir le produit</a>
+					</div>
+					<div class="product">
+						<img src="img/sprites/img-product1.png">
+						<h2>Tablette Ipad 2</h2>
+						<span class="product_status"> En stock</span>
+						<p>A partir de <span>00,00 € HT</span> </p>
+						<a href="#">voir le produit</a>
+					</div>
+					<div class="product">
+						<img src="img/sprites/img-product1.png">
+						<h2>Tablette Ipad 2</h2>
+						<span class="product_status"> En stock</span>
+						<p>A partir de <span>00,00 € HT</span> </p>
+						<a href="#">voir le produit</a>
+					</div>
+					<div class="product">
+						<img src="img/sprites/img-product1.png">
+						<h2>Tablette Ipad 2</h2>
+						<span class="product_status"> En stock</span>
+						<p>A partir de <span>00,00 € HT</span> </p>
+						<a href="#">voir le produit</a>
+					</div>
+				</div>
+			</div>
+		</div>
+			<div class="wrap_prefooter clearfix">
+				<div class="wrapper">
+					<p>Besoin d'aide ?</p>
+					<ul>
+						<li>
+							<a href="#">faq</a>
+						</li>
+						<li>
+							<a href="#">tchat</a>
+						</li>
+						<li>
+							<a href="#">appeler</a>
+						</li>
+						<li>
+							<a href="#">contact</a>
+						</li>
+					</ul>
+				</div>
+			</div>
+
+	</main>
+	<footer>
+		<div class="wrap_footer clearfix ">
+			<div class="wrapper ">
+				<div class="wrap_description">
+					<div class="wrap_data-text">
+						<h3>premier salon</h3>
+						<p>Les informations clés</p>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+
+	<!--<script type="text/javascript" src="//code.jquery.com/jquery-1.11.0.min.js"></script>-->
+	<!--<script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>-->
+	<script type="text/javascript" src="js/main.js"></script>
+	<script type="text/javascript" src="js/owl.carousel.js"></script>
+
 	<script src="js/script.min.js"></script>
 </body>
 

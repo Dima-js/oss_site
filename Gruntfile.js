@@ -102,7 +102,14 @@ module.exports = function (grunt) {
         tasks: ['uglify']
       }
 
-    }
+    },
+      sprite:{
+          all: {
+              src: 'img/sprites/*.png',
+              dest: 'im/spritesheet.png',
+              destCss: 'sass/_sprites.sass'
+          }
+      }
   });
   // Load Grunt plugins
   grunt.loadNpmTasks('grunt-contrib-sass');
@@ -111,6 +118,7 @@ module.exports = function (grunt) {
   grunt.loadNpmTasks('grunt-contrib-uglify');
   grunt.loadNpmTasks('grunt-contrib-watch');
   grunt.loadNpmTasks('grunt-contrib-html-build');
+  grunt.loadNpmTasks('grunt-spritesmith');
   grunt.loadNpmTasks('grunt-browser-sync');
 
   // Register Grunt tasks

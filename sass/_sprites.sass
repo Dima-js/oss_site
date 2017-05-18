@@ -1,0 +1,132 @@
+// SASS variables are information about icon's compiled state, stored under its original file name
+//
+// .icon-home
+//   width: $icon-home-width
+//
+// The large array-like variables contain all information about a single icon
+// $icon-home: x y offset_x offset_y width height total_width total_height image_path
+//
+// At the bottom of this section, we provide information about the spritesheet itself
+// $spritesheet: width height image $spritesheet-sprites
+$fr-name: 'fr'
+$fr-x: 24px
+$fr-y: 55px
+$fr-offset-x: -24px
+$fr-offset-y: -55px
+$fr-width: 24px
+$fr-height: 16px
+$fr-total-width: 202px
+$fr-total-height: 79px
+$fr-image: '../im/spritesheet.png'
+$fr: (24px, 55px, -24px, -55px, 24px, 16px, 202px, 79px, '../im/spritesheet.png', 'fr', )
+$icon-like-name: 'icon-like'
+$icon-like-x: 72px
+$icon-like-y: 55px
+$icon-like-offset-x: -72px
+$icon-like-offset-y: -55px
+$icon-like-width: 11px
+$icon-like-height: 10px
+$icon-like-total-width: 202px
+$icon-like-total-height: 79px
+$icon-like-image: '../im/spritesheet.png'
+$icon-like: (72px, 55px, -72px, -55px, 11px, 10px, 202px, 79px, '../im/spritesheet.png', 'icon-like', )
+$icon-user-name: 'icon-user'
+$icon-user-x: 83px
+$icon-user-y: 55px
+$icon-user-offset-x: -83px
+$icon-user-offset-y: -55px
+$icon-user-width: 10px
+$icon-user-height: 10px
+$icon-user-total-width: 202px
+$icon-user-total-height: 79px
+$icon-user-image: '../im/spritesheet.png'
+$icon-user: (83px, 55px, -83px, -55px, 10px, 10px, 202px, 79px, '../im/spritesheet.png', 'icon-user', )
+$logo-name: 'logo'
+$logo-x: 0px
+$logo-y: 0px
+$logo-offset-x: 0px
+$logo-offset-y: 0px
+$logo-width: 202px
+$logo-height: 55px
+$logo-total-width: 202px
+$logo-total-height: 79px
+$logo-image: '../im/spritesheet.png'
+$logo: (0px, 0px, 0px, 0px, 202px, 55px, 202px, 79px, '../im/spritesheet.png', 'logo', )
+$shopping-cart-name: 'shopping-cart'
+$shopping-cart-x: 0px
+$shopping-cart-y: 55px
+$shopping-cart-offset-x: 0px
+$shopping-cart-offset-y: -55px
+$shopping-cart-width: 24px
+$shopping-cart-height: 24px
+$shopping-cart-total-width: 202px
+$shopping-cart-total-height: 79px
+$shopping-cart-image: '../im/spritesheet.png'
+$shopping-cart: (0px, 55px, 0px, -55px, 24px, 24px, 202px, 79px, '../im/spritesheet.png', 'shopping-cart', )
+$uk-name: 'uk'
+$uk-x: 48px
+$uk-y: 55px
+$uk-offset-x: -48px
+$uk-offset-y: -55px
+$uk-width: 24px
+$uk-height: 16px
+$uk-total-width: 202px
+$uk-total-height: 79px
+$uk-image: '../im/spritesheet.png'
+$uk: (48px, 55px, -48px, -55px, 24px, 16px, 202px, 79px, '../im/spritesheet.png', 'uk', )
+$spritesheet-width: 202px
+$spritesheet-height: 79px
+$spritesheet-image: '../im/spritesheet.png'
+$spritesheet-sprites: ($fr, $icon-like, $icon-user, $logo, $shopping-cart, $uk, )
+$spritesheet: (202px, 79px, '../im/spritesheet.png', $spritesheet-sprites, )
+
+// The provided mixins are intended to be used with the array-like variables
+//
+// .icon-home
+//   @include sprite-width($icon-home)
+//
+// .icon-email
+//   @include sprite($icon-email)
+//
+// Example usage in HTML:
+//   `display: block` sprite:
+//   <div class="icon-home"></div>
+//
+// To change `display` (e.g. `display: inline-block;`), we suggest using a common CSS class:
+//   // CSS
+//   .icon {
+//     display: inline-block;
+//   }
+//
+//   // HTML
+//   <i class="icon icon-home"></i>
+@mixin sprite-width($sprite)
+  width: nth($sprite, 5)
+
+@mixin sprite-height($sprite)
+  height: nth($sprite, 6)
+
+@mixin sprite-position($sprite)
+  $sprite-offset-x: nth($sprite, 3)
+  $sprite-offset-y: nth($sprite, 4)
+  background-position: $sprite-offset-x  $sprite-offset-y
+
+@mixin sprite-image($sprite)
+  $sprite-image: nth($sprite, 9)
+  background-image: url(#{$sprite-image})
+
+@mixin sprite($sprite)
+  @include sprite-image($sprite)
+  @include sprite-position($sprite)
+  @include sprite-width($sprite)
+  @include sprite-height($sprite)
+
+// The `sprites` mixin generates identical output to the CSS template
+//   but can be overridden inside of SASS
+//
+// @include sprites($spritesheet-sprites)
+@mixin sprites($sprites)
+  @each $sprite in $sprites
+    $sprite-name: nth($sprite, 10)
+    .#{$sprite-name}
+      @include sprite($sprite)
