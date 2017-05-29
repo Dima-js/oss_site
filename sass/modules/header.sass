@@ -10,6 +10,9 @@
     content: ""
     display: table
     clear: both
+.wrapper
+  max-width: 1280px
+  margin: 0 auto
 
 header
   .header_top-menu
@@ -93,14 +96,16 @@ header
           font-weight: bold
   .wrap_banner
     border: 10px solid #fff
+    background: #f9f050
     .banner
       width: 100%
       height: auto
       position: relative
+      height: 263px
 
     p
       position: absolute
-      top: 50%
+      top: 267px
       left: 0
       color: #2c2f33
       font-family: "Proxima nova bold"
@@ -130,16 +135,25 @@ main
         float: left
         position: relative
         margin-right: 24px
-        &:last-child
-          color: #eb2645
-          font-weight: 700
-        &:not(:first-child):before
+        //&:last-child
+        //  color: #eb2645
+        //  font-weight: 700
+        &:before
           content: '>'
           color: #eb2645
           position: absolute
           top: 0
-          left: -14px
+          left: 58px
           font-size: 10px
+      p
+        color: #eb2645
+        font-weight: 700
+        font-family: "Proxima nova bold"
+        font-size: 12px
+        text-transform: uppercase
+        float: left
+        position: relative
+        margin-right: 24px
     .wrap_date-block
       margin-top: 10px
       margin-bottom: 10px
@@ -433,31 +447,98 @@ main
           width: 20px
 
 footer
-  .wrapper
-    max-width: 1280px
-    margin: 0 auto
-    .wrap_footer
-      padding-left: 48px
-      padding-right: 48px
-      background-color: #182d47
+  background-color: #182d47
+  .wrap_footer
+    padding-left: 48px
+    padding-right: 48px
+    padding-top: 22px
+    background-color: #182d47
+    .wrapper
+      max-width: 1280px
+      margin: 0 auto
       .wrap_description
         float: left
+        margin-right: 135px
         .wrap_data-text
+          height: 100px
+
           h3
+            text-align: center
             color: #ffffff
             font-family: "Proxima nova bold"
             font-size: 16px
             font-weight: 900
             line-height: 20px
             text-transform: uppercase
+            position: relative
+            margin-top: 0
+            margin-bottom: 0
+            padding-bottom: 27px
+            padding-top: 30px
             &:before
               content: ''
+              background: url("../img/sprites/red-rectangl.png") no-repeat
+              height: 3px
+              width: 18px
+              position: absolute
+              bottom: 15px
+              left: 40%
 
           p
+            text-align: center
             color: #b9bbbd
             font-family: "Proxima nova bold"
             font-size: 14px
             font-weight: 400
+          .text-botom
+            text-align: left
+            color: #b9bbbd
+            font-family: "Proxima nova bold"
+            font-size: 14px
+            font-weight: 400
+          h4
+            font-family: "Proxima nova bold"
+            line-height: 22px
+            color: #ffffff
+            font-size: 18px
+            font-weight: 700
+            padding-top: 30px
+            padding-bottom: 5px
+            margin-top: 0
+            margin-bottom: 0
+        form
+          position: relative
+          margin-top: -10px
+          input
+            width: 216px
+            background-color: #ffffff
+            color: #8c8c8c
+            font-family: "Proxima Nova"
+            padding: 17px 50px 14px 20px
+            font-size: 14px
+            font-weight: 700
+            outline: none
+            border: none
+
+          button
+            width: 42px
+            height: 42px
+            position: absolute
+            top: 2px
+            right: 2px
+            background-color: #eb2645
+            color: #ffffff
+            font-family: "Proxima Nova"
+            font-size: 16px
+            cursor: pointer
+            font-weight: 700
+            line-height: 22px
+            text-transform: uppercase
+            border: none
+        .wrap_share
+          a
+            margin-right: 5px
+
 
 
 

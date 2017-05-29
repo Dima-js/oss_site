@@ -36,6 +36,10 @@ p {
     display: table;
     clear: both; }
 
+.wrapper {
+  max-width: 1280px;
+  margin: 0 auto; }
+
 header .header_top-menu {
   position: relative;
   box-shadow: 0px 3px 38px -16px rgba(0, 0, 0, 0.75); }
@@ -111,14 +115,16 @@ header .header_top-menu {
         color: #fff;
         font-weight: bold; }
 header .wrap_banner {
-  border: 10px solid #fff; }
+  border: 10px solid #fff;
+  background: #f9f050; }
   header .wrap_banner .banner {
     width: 100%;
     height: auto;
-    position: relative; }
+    position: relative;
+    height: 263px; }
   header .wrap_banner p {
     position: absolute;
-    top: 50%;
+    top: 267px;
     left: 0;
     color: #2c2f33;
     font-family: "Proxima nova bold";
@@ -147,16 +153,22 @@ main .wrapper {
       float: left;
       position: relative;
       margin-right: 24px; }
-      main .wrapper .wrap_breadcrumbs a:last-child {
-        color: #eb2645;
-        font-weight: 700; }
-      main .wrapper .wrap_breadcrumbs a:not(:first-child):before {
+      main .wrapper .wrap_breadcrumbs a:before {
         content: ">";
         color: #eb2645;
         position: absolute;
         top: 0;
-        left: -14px;
+        left: 58px;
         font-size: 10px; }
+    main .wrapper .wrap_breadcrumbs p {
+      color: #eb2645;
+      font-weight: 700;
+      font-family: "Proxima nova bold";
+      font-size: 12px;
+      text-transform: uppercase;
+      float: left;
+      position: relative;
+      margin-right: 24px; }
   main .wrapper .wrap_date-block {
     margin-top: 10px;
     margin-bottom: 10px; }
@@ -448,29 +460,94 @@ main .wrap_prefooter {
         height: 20px;
         width: 20px; }
 
-footer .wrapper {
-  max-width: 1280px;
-  margin: 0 auto; }
-  footer .wrapper .wrap_footer {
+footer {
+  background-color: #182d47; }
+  footer .wrap_footer {
     padding-left: 48px;
     padding-right: 48px;
+    padding-top: 22px;
     background-color: #182d47; }
-    footer .wrapper .wrap_footer .wrap_description {
-      float: left; }
-      footer .wrapper .wrap_footer .wrap_description .wrap_data-text h3 {
-        color: #ffffff;
-        font-family: "Proxima nova bold";
-        font-size: 16px;
-        font-weight: 900;
-        line-height: 20px;
-        text-transform: uppercase; }
-        footer .wrapper .wrap_footer .wrap_description .wrap_data-text h3:before {
-          content: ""; }
-      footer .wrapper .wrap_footer .wrap_description .wrap_data-text p {
-        color: #b9bbbd;
-        font-family: "Proxima nova bold";
-        font-size: 14px;
-        font-weight: 400; }
+    footer .wrap_footer .wrapper {
+      max-width: 1280px;
+      margin: 0 auto; }
+      footer .wrap_footer .wrapper .wrap_description {
+        float: left;
+        margin-right: 135px; }
+        footer .wrap_footer .wrapper .wrap_description .wrap_data-text {
+          height: 100px; }
+          footer .wrap_footer .wrapper .wrap_description .wrap_data-text h3 {
+            text-align: center;
+            color: #ffffff;
+            font-family: "Proxima nova bold";
+            font-size: 16px;
+            font-weight: 900;
+            line-height: 20px;
+            text-transform: uppercase;
+            position: relative;
+            margin-top: 0;
+            margin-bottom: 0;
+            padding-bottom: 27px;
+            padding-top: 30px; }
+            footer .wrap_footer .wrapper .wrap_description .wrap_data-text h3:before {
+              content: "";
+              background: url("../img/sprites/red-rectangl.png") no-repeat;
+              height: 3px;
+              width: 18px;
+              position: absolute;
+              bottom: 15px;
+              left: 40%; }
+          footer .wrap_footer .wrapper .wrap_description .wrap_data-text p {
+            text-align: center;
+            color: #b9bbbd;
+            font-family: "Proxima nova bold";
+            font-size: 14px;
+            font-weight: 400; }
+          footer .wrap_footer .wrapper .wrap_description .wrap_data-text .text-botom {
+            text-align: left;
+            color: #b9bbbd;
+            font-family: "Proxima nova bold";
+            font-size: 14px;
+            font-weight: 400; }
+          footer .wrap_footer .wrapper .wrap_description .wrap_data-text h4 {
+            font-family: "Proxima nova bold";
+            line-height: 22px;
+            color: #ffffff;
+            font-size: 18px;
+            font-weight: 700;
+            padding-top: 30px;
+            padding-bottom: 5px;
+            margin-top: 0;
+            margin-bottom: 0; }
+        footer .wrap_footer .wrapper .wrap_description form {
+          position: relative;
+          margin-top: -10px; }
+          footer .wrap_footer .wrapper .wrap_description form input {
+            width: 216px;
+            background-color: #ffffff;
+            color: #8c8c8c;
+            font-family: "Proxima Nova";
+            padding: 17px 50px 14px 20px;
+            font-size: 14px;
+            font-weight: 700;
+            outline: none;
+            border: none; }
+          footer .wrap_footer .wrapper .wrap_description form button {
+            width: 42px;
+            height: 42px;
+            position: absolute;
+            top: 2px;
+            right: 2px;
+            background-color: #eb2645;
+            color: #ffffff;
+            font-family: "Proxima Nova";
+            font-size: 16px;
+            cursor: pointer;
+            font-weight: 700;
+            line-height: 22px;
+            text-transform: uppercase;
+            border: none; }
+        footer .wrap_footer .wrapper .wrap_description .wrap_share a {
+          margin-right: 5px; }
 
 /* options dots slider  */
 .owl-theme .owl-dots {
