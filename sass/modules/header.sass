@@ -15,11 +15,54 @@
   margin: 0 auto
 
 header
+
   .header_top-menu
-    position: relative
     -webkit-box-shadow: 0px 3px 38px -16px rgba(0, 0, 0, 0.75)
     -moz-box-shadow: 0px 3px 38px -16px rgba(0, 0, 0, 0.75)
     box-shadow: 0px 3px 38px -16px rgba(0, 0, 0, 0.75)
+    position: relative
+    .panier
+      position: absolute
+      bottom: -134px
+      z-index: 999
+      right: 0
+      width: 292px
+      .wrapper_panier
+        .wrap_total-sum
+          background-color: #1a3456
+          padding: 30px 20px 24px 20px
+          h4
+            color: #ffffff
+            font-family: "Proxima Nova"
+            font-size: 14px
+            font-weight: 700
+            float: left
+            line-height: 16px
+            text-transform: uppercase
+            margin-top: 0
+            margin-bottom: 0
+          span
+            color: #ffffff
+            font-family: "Proxima Nova"
+            font-size: 14px
+            font-weight: 700
+            line-height: 16px
+            text-transform: uppercase
+            float: right
+            margin-bottom: 24px
+          input
+            width: 252px
+            height: 40px
+            background-color: #eb2645
+            color: #ffffff
+            font-family: "Proxima Nova"
+            font-size: 14px
+            font-weight: 700
+            border: none
+            outline: none
+            text-transform: uppercase
+            cursor: pointer
+            display: block
     .logo
       background: url("../img/logo.png") no-repeat
       width: 202px
@@ -95,7 +138,7 @@ header
           color: #fff
           font-weight: bold
   .wrap_banner
-    border: 10px solid #fff
+    //border: 10px solid #fff
     background: #f9f050
     .banner
       width: 100%
@@ -105,20 +148,151 @@ header
 
     p
       position: absolute
-      top: 267px
+      top: 255px
       left: 0
       color: #2c2f33
-      font-family: "Proxima nova bold"
+      font-family: Phosphate
       font-size: 35px
       line-height: 40px
       text-align: center
       width: 100%
+      text-transform: uppercase
   nav
     background: #182d47
     height: 71px
-    line-height: 71px
-    text-align: center
-              
+    position: relative
+    .wrap_menu
+
+      ul
+        list-style: none
+        margin-top: 0
+        margin-bottom: 0
+        padding-left: 45px
+        display: inline-block
+        li
+          display: inline-block
+          margin-top: 4px
+          margin-bottom: 4px
+          height: 63px
+          vertical-align: top
+          margin-left: -.36em
+          &:hover
+            a
+              color: #182d47
+              background-color: #ffffff
+              //border-bottom: 4px solid #eb2645
+              //&:before
+              //  content: ''
+              //  background: url("../img/rectangl.png") no-repeat
+              //  height: 5px
+              //  width: 9px
+              //  position: absolute
+              //  top: 0px
+              //  left: 48%
+          &:not(:last-child)
+            border-right: 1px solid rgba(245, 245, 245, 0.24)
+          a
+            color: #ffffff
+            font-family: "Proxima Nova"
+            padding-top: 17px
+            font-size: 13px
+            font-weight: 700
+            line-height: 15px
+            text-transform: uppercase
+            height: 50px
+            display: inline-block
+            position: relative
+            padding-left: 25px
+            padding-right: 25px
+            vertical-align: sub
+          &:hover
+
+
+            .item-main_menu
+              opacity: 1
+              overflow: visible
+              transition: all 0.5s
+              visibility: visible
+              display: block
+          .item-menu
+            margin: 27px 49px 54px 29px
+            display: table
+            .wrap_menu-data
+              display: table-row
+              .menu-data
+                width: 325px
+                display: table-cell
+                vertical-align: top
+                padding-left: 20px
+                &:not(:last-child)
+                  border-right: 1px solid #e6e6e6
+                h3
+                  color: #eb2645
+                  font-family: "Proxima Nova"
+                  font-size: 14px
+                  font-weight: 700
+                  line-height: 27px
+                  text-transform: uppercase
+                  margin-top: 0
+                  margin-bottom: 0
+                .sub-item
+                  margin-top: 5px
+                  a
+                    color: #132947
+                    display: inline-block
+                    font-family: "Proxima Nova"
+                    font-size: 14px
+                    font-weight: 400
+                    line-height: 26px
+                    padding: 0
+                    margin-top: 2px
+                    margin-bottom: 2px
+                    text-transform: inherit
+                    height: auto
+          .item-main_menu
+            position: absolute
+            top: 71px
+            left: 0
+            width: 100%
+            box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1)
+            background-color: #ffffff
+            opacity: 0
+            display: none
+            z-index: 9999
+            visibility: hidden
+            &.active
+              opacity: 1
+              overflow: visible
+              transition: all 0.5s
+              visibility: visible
+
+.header_top-search
+  position: relative
+  float: right
+  margin-top: 10px
+  margin-right: 10px
+  input
+    width: 234px
+    height: 44px
+    background-color: #ffffff
+    padding-left: 52px
+    padding-right: 20px
+    color: #afb1b3
+    font-family: "Proxima Nova"
+    font-size: 14px
+    font-weight: 700
+  button
+    position: absolute
+    top: 8px
+    left: 18px
+    width: 30px
+    height: 36px
+    background: transparent
+    border: none
+    outline: none
+    cursor: pointer
+
+
 main
   .wrapper
     max-width: 1280px
@@ -448,20 +622,28 @@ main
 
 footer
   background-color: #182d47
-  .wrap_footer
-    padding-left: 48px
-    padding-right: 48px
-    padding-top: 22px
-    background-color: #182d47
-    .wrapper
-      max-width: 1280px
-      margin: 0 auto
+  .wrapper
+    max-width: 1280px
+    margin: 0 auto
+    .wrap_footer
+      margin-left: 48px
+      margin-right: 48px
+      margin-top: 22px
+      background-color: #182d47
+      border-bottom: 1px solid #2b5180
+      position: relative
+      .to-top
+        background: url("../img/sprites/arrow-to-top.png") no-repeat
+        position: absolute
+        bottom: 32px
+        right: 0
+        height: 48px
+        width: 48px
       .wrap_description
         float: left
         margin-right: 135px
         .wrap_data-text
           height: 100px
-
           h3
             text-align: center
             color: #ffffff
@@ -536,8 +718,27 @@ footer
             text-transform: uppercase
             border: none
         .wrap_share
+          padding-bottom: 40px
           a
             margin-right: 5px
+    .wrap_footer-footer
+      margin: 21px 48px 25px 48px
+      span
+        color: #b9bbbd
+        font-family: "Proxima Nova"
+        font-size: 12px
+        font-weight: 400
+        line-height: 22px
+        float: left
+      .bottom-menu
+        float: right
+        a
+          margin-left: 40px
+          color: #9a9d9f
+          font-family: "Proxima Nova"
+          font-size: 14px
+          font-weight: 400
+          line-height: 22px
 
 
 

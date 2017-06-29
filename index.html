@@ -14,6 +14,8 @@
 		$('.owl-carousel').owlCarousel({
 			loop:true,
 			nav:true,
+			autoplay:true,
+			autoplayTimeout:3000,
 			responsive:{
 				0:{
 					items:1
@@ -29,10 +31,21 @@
 	});
 </script>
 
+	<script type="text/javascript">
+		$(document).ready(function(){
+			$(".wrap_footer").on("click","a", function (event) {
+				event.preventDefault();
+				var id  = $(this).attr('href'),
+						top = $(id).offset().top;
+				$('body,html').animate({scrollTop: top}, 1500);
+			});
+		});
+	</script>
+
 </head>
 
 <body>
-	<header>
+	<header id="top">
 		<div class="wrapper">
 			<div class="header_top-menu clearfix">
 				<a href="#" class="logo"></a>
@@ -56,7 +69,16 @@
 					</div>
 
 				</div>
+				<div class="panier">
+					<div class="wrapper_panier">
+						<div class="wrap_total-sum">
+							<h4>Total TTC</h4>
+							<span>3 458,66 €</span>
+							<input type="submit" value="Commander">
+						</div>
+				</div>
 			</div>
+
 		</div>
 
 		<div class="wrap_banner">
@@ -67,10 +89,230 @@
 				</p>
 			</div>
 		</div>
-		<nav>
-			<div>this is menu</div>
-		</nav>
+		<div class="wrapper">
+			<nav>
+				<div class="wrap_menu">
+					<ul>
+						<li>
+							<a href="#">Présentation</a>
+							<div class="item-main_menu">
+								<div class="item-menu">
+									<div class="wrap_menu-data">
+										<div class="menu-data">
+											<h3>Electricité</h3>
+											<div class="sub-item">
+												<a href="#">Branchement intermittent</a>
+												<a href="#">Branchement permanent</a>
+												<a href="#">Augmentation de puissance intermittent</a>
+												<a href="#">Augmentation de puissance permanente</a>
+												<a href="#">Matériel complémentaire</a>
+											</div>
+										</div>
+										<div class="menu-data">
+											<h3>Air comprimé</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+											</div>
+										</div>
 
+										<div class="menu-data">
+											<h3>Eau</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+												<a href="#">Equipements complémentaires</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">Accéder<br>
+								au site</a>
+							<div class="item-main_menu">
+								<div class="item-menu">
+									<div class="wrap_menu-data">
+										<div class="menu-data">
+											<h3>Electricité</h3>
+											<div class="sub-item">
+												<a href="#">Branchement intermittent</a>
+												<a href="#">Branchement permanent</a>
+												<a href="#">Augmentation de puissance intermittent</a>
+												<a href="#">Augmentation de puissance permanente</a>
+												<a href="#">Matériel complémentaire</a>
+											</div>
+										</div>
+										<div class="menu-data">
+											<h3>Air comprimé</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+											</div>
+										</div>
+
+										<div class="menu-data">
+											<h3>Eau</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+												<a href="#">Equipements complémentaires</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">Brancher <br>
+								mon stand</a>
+							<div class="item-main_menu">
+								<div class="item-menu">
+									<div class="wrap_menu-data">
+										<div class="menu-data">
+											<h3>Electricité</h3>
+											<div class="sub-item">
+												<a href="#">Branchement intermittent</a>
+												<a href="#">Branchement permanent</a>
+												<a href="#">Augmentation de puissance intermittent</a>
+												<a href="#">Augmentation de puissance permanente</a>
+												<a href="#">Matériel complémentaire</a>
+											</div>
+										</div>
+										<div class="menu-data">
+											<h3>Air comprimé</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+											</div>
+										</div>
+
+										<div class="menu-data">
+											<h3>Eau</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+												<a href="#">Equipements complémentaires</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">Aménager<br>
+								mon stand</a>
+							<div class="item-main_menu">
+								<div class="item-menu">
+									<div class="wrap_menu-data">
+										<div class="menu-data">
+											<h3>Electricité</h3>
+											<div class="sub-item">
+												<a href="#">Branchement intermittent</a>
+												<a href="#">Branchement permanent</a>
+												<a href="#">Augmentation de puissance intermittent</a>
+												<a href="#">Augmentation de puissance permanente</a>
+												<a href="#">Matériel complémentaire</a>
+											</div>
+										</div>
+										<div class="menu-data">
+											<h3>Air comprimé</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+											</div>
+										</div>
+
+										<div class="menu-data">
+											<h3>Eau</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+												<a href="#">Equipements complémentaires</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">Services</a>
+							<div class="item-main_menu">
+								<div class="item-menu">
+									<div class="wrap_menu-data">
+										<div class="menu-data">
+											<h3>Electricité</h3>
+											<div class="sub-item">
+												<a href="#">Branchement intermittent</a>
+												<a href="#">Branchement permanent</a>
+												<a href="#">Augmentation de puissance intermittent</a>
+												<a href="#">Augmentation de puissance permanente</a>
+												<a href="#">Matériel complémentaire</a>
+											</div>
+										</div>
+										<div class="menu-data">
+											<h3>Air comprimé</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+											</div>
+										</div>
+
+										<div class="menu-data">
+											<h3>Eau</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+												<a href="#">Equipements complémentaires</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+						<li>
+							<a href="#">Autour de ma<br>
+								manifestation</a>
+							<div class="item-main_menu">
+								<div class="item-menu">
+									<div class="wrap_menu-data">
+										<div class="menu-data">
+											<h3>Electricité</h3>
+											<div class="sub-item">
+												<a href="#">Branchement intermittent</a>
+												<a href="#">Branchement permanent</a>
+												<a href="#">Augmentation de puissance intermittent</a>
+												<a href="#">Augmentation de puissance permanente</a>
+												<a href="#">Matériel complémentaire</a>
+											</div>
+										</div>
+										<div class="menu-data">
+											<h3>Air comprimé</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+											</div>
+										</div>
+
+										<div class="menu-data">
+											<h3>Eau</h3>
+											<div class="sub-item">
+												<a href="#">Branchement  et raccordement</a>
+												<a href="#">Equipements complémentaires</a>
+											</div>
+
+										</div>
+									</div>
+								</div>
+							</div>
+						</li>
+					</ul>
+					<form action="#" method="post" class="header_top-search">
+						<input type="text" name="serch" placeholder="Recherche">
+						<button type="submit">
+							<img src="img/loupe.png">
+						</button>
+					</form>
+				</div>
+
+			</nav>
+		</div>
+		</div>
 	</header>
 	<main>
 		<div class="wrapper">
@@ -198,8 +440,9 @@
 
 	</main>
 	<footer>
-		<div class="wrap_footer clearfix ">
-			<div class="wrapper clearfix">
+		<div class="wrapper clearfix">
+			<div class="wrap_footer clearfix ">
+				<a href="#top"  class="to-top"></a>
 				<div class="wrap_description">
 					<div class="wrap_data-text">
 						<h3>premier salon</h3>
@@ -243,6 +486,16 @@
 					</div>
 				</div>
 			</div>
+			<div class="wrap_footer-footer clearfix">
+				<span>© Viparis 2016</span>
+				<div class="bottom-menu">
+					<a href="#">A propos de Viparis</a>
+					<a href="#">Crédits & mentions légales</a>
+					<a href="#">Cookies</a>
+					<a href="#">CGV - CGU</a>
+					<a href="#">CGS</a>
+				</div>
+			</div>
 		</div>
 	</footer>
 
@@ -252,6 +505,7 @@
 	<script type="text/javascript" src="js/owl.carousel.js"></script>
 
 	<script src="js/script.min.js"></script>
+
 </body>
 
 </html>
